@@ -1,11 +1,9 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.10",
-    "sass": "^1.101.0",
     "tailwindcss": "^4.1.10"
   },
   "scripts": {
-    "dev": "@tailwindcss -i ./src/input.css -o ./public/style/app.css --watch",
-    "sass": "sass ./sass/input.sass ./css/output.css -w"
+    "dev": "@tailwindcss -i ./src/input.css -o ./public/style/app.css --watch"
   }
 }

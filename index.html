@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
     <title>Dark Mode</title>
   </head>
-  <body></body>
+  <body class="w-screen h-screen flex items-center justify-center">
+    <main
+      class="w-[400px] flex items-center justify-center flex-col border-2 rounded-2xl p-2"
+      id="cardMain"
+    >
+      <img
+        src="./svg/darck-mode.svg"
+        alt="dark-mode"
+        id="btnDarkMode"
+        class="absolute translate-x-[200px] bg-white w-9 rounded-full cursor-pointer"
+      />
+      <img
+        src="./svg/light-mode.svg"
+        alt="dark-mode"
+        id="btnLightMode"
+        class="absolute translate-x-[200px] p-1 bg-white w-9 rounded-full cursor-pointer hidden"
+      />
+      <section
+        class="bg-yellow-50 w-full flex items-center justify-center flex-col gap-3 rounded-t-2xl"
+        id="cardTitle"
+      >
+        <img
+          src="./image/images.png"
+          alt="image-profile"
+          class="rounded-full w-50 mt-3 border-2"
+        />
+        <h1 class="text-3xl font-black cursor-default">Mohammad Asadi</h1>
+        <p class="text-[16px] font-light cursor-default">@asadiMohammad</p>
+        <p class="font-light text-[14px] mb-3 cursor-default">
+          Developer FrontEnd
+        </p>
+      </section>
+      <section
+        class="w-full flex flex-col items-center justify-center gap-10 pt-5 rounded-b-2xl"
+        id="cardAbout"
+      >
+        <div class="w-full flex items-center justify-around">
+          <div class="flex flex-col items-center justify-center gap-3">
+            <h3 class="text-4xl cursor-default">17</h3>
+            <p class="text-[14px] cursor-default">shots</p>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <h3 class="text-4xl cursor-default">142</h3>
+            <p class="text-[14px] cursor-default">following</p>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <h3 class="text-4xl cursor-default">58</h3>
+            <p class="text-[14px] cursor-default">follower</p>
+          </div>
+        </div>
+        <a
+          href="sms:+98915000541"
+          class="px-16 py-3 bg-green-300 rounded-2xl font-light"
+          >send message</a
+        >
+        <p class="font-light text-[14px] cursor-default mb-3">more</p>
+      </section>
+    </main>
+  </body>
   <script src="./bootstrap/js/bootstrap.js"></script>
+  <script src="./js/app.js"></script>
 </html>
