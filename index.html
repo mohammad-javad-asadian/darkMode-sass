@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/style/app.css" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Dark Mode</title>
   </head>
-  <body class="w-screen h-screen flex items-center justify-center">
+  <body
+    class="w-screen h-screen flex items-center justify-center overflow-hidden"
+  >
     <main
-      class="w-[400px] flex items-center justify-center flex-col border-2 rounded-2xl p-2"
+      class="w-[400px] flex items-center justify-center flex-col border-2 rounded-2xl p-2 transition-all"
       id="cardMain"
     >
       <img
@@ -33,11 +36,12 @@
           alt="image-profile"
           class="rounded-full w-50 mt-3 border-2"
         />
-        <h1 class="text-3xl font-black cursor-default">Mohammad Asadi</h1>
-        <p class="text-[16px] font-light cursor-default">@asadiMohammad</p>
-        <p class="font-light text-[14px] mb-3 cursor-default">
-          Developer FrontEnd
-        </p>
+        <h1 class="text-3xl font-black cursor-default" id="txtUserName"></h1>
+        <p class="text-[16px] font-light cursor-default" id="txtUserEmail"></p>
+        <p
+          class="font-light text-[14px] mb-3 cursor-default"
+          id="txtUserWebSite"
+        ></p>
       </section>
       <section
         class="w-full flex flex-col items-center justify-center gap-10 pt-5 rounded-b-2xl"
@@ -45,15 +49,15 @@
       >
         <div class="w-full flex items-center justify-around">
           <div class="flex flex-col items-center justify-center gap-3">
-            <h3 class="text-4xl cursor-default">17</h3>
+            <h3 class="text-4xl cursor-default" id="txtNumberShots"></h3>
             <p class="text-[14px] cursor-default">shots</p>
           </div>
           <div class="flex flex-col items-center justify-center gap-3">
-            <h3 class="text-4xl cursor-default">142</h3>
+            <h3 class="text-4xl cursor-default" id="txtNumberFollowing"></h3>
             <p class="text-[14px] cursor-default">following</p>
           </div>
           <div class="flex flex-col items-center justify-center gap-3">
-            <h3 class="text-4xl cursor-default">58</h3>
+            <h3 class="text-4xl cursor-default" id="txtNumberFollower"></h3>
             <p class="text-[14px] cursor-default">follower</p>
           </div>
         </div>
